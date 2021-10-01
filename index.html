@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>My Family Book</title>
+
+</head>
+<body style="display:table-cell; text-align:center; vertical-align:middle;">
+
+    <h1 style="text-align: center;">My Family Book</h1>
+    <img src="https://images-na.ssl-images-amazon.com/images/I/51KNpAKei-L.jpg" id="Familyimg" width="250px" height="250px">
+    
+    <br><br><label id="labfam">My Family Book</label><br><br>
+    <button onclick="update();">Next</button>
+
+<script>
+var updatedimages = ['Alia singh img.jpg','Dijeet singh img.jpg','Family book img.jpg','Ranbir singh img.jfif',' Rocky singh img.jpg'];
+var updatednames =["Alia singh","Dijeet singh","Family book","Ranbir singh","Rocky singh"];
+var counter=0;
+ function update(){
+    if(counter>4){
+    counter=0;
+    }
+    document.getElementById("Familyimg").src=updatedimages[counter];
+    document.getElementById("labfam").innerHTML=updatednames[counter];
+counter=counter+1;
+ }
+
+</script>
+</body>
+</html>
